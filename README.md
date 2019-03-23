@@ -28,7 +28,7 @@ Luacheck supports checking Lua files using syntax of Lua 5.1, Lua 5.2, Lua 5.3 a
 
 ### Using LuaRocks
 
-From your command line run the following command (using `sudo` if necessary):
+Run the following command (using `sudo` if necessary):
 
 ```
 luarocks install luacheck
@@ -86,13 +86,13 @@ For more info, see [documentation](https://luacheck.readthedocs.io/en/stable/).
 There are a few plugins which allow using Luacheck directly inside an editor, showing warnings inline:
 
 * For Vim, [Syntastic](https://github.com/vim-syntastic/syntastic) contains [luacheck checker](https://github.com/vim-syntastic/syntastic/wiki/Lua%3A---luacheck);
-* For Sublime Text 3 there is [SublimeLinter-luacheck](https://packagecontrol.io/packages/SublimeLinter-luacheck) which requires [SublimeLinter](https://sublimelinter.readthedocs.io/en/latest/);
-* For Atom there is [linter-luacheck](https://atom.io/packages/linter-luacheck) which requires [AtomLinter](https://github.com/steelbrain/linter);
+* For Sublime Text 3, [SublimeLinter-luacheck](https://packagecontrol.io/packages/SublimeLinter-luacheck) requires [SublimeLinter](https://sublimelinter.readthedocs.io/en/latest/);
+* For Atom, [linter-luacheck](https://atom.io/packages/linter-luacheck) requires [AtomLinter](https://github.com/steelbrain/linter);
 * For Emacs, [Flycheck](http://www.flycheck.org/en/latest/) contains [luacheck checker](http://www.flycheck.org/en/latest/languages.html#lua);
-* For Brackets, there is [linter.luacheck](https://github.com/Malcolm3141/brackets-luacheck) extension;
-* For Visual Studio code there is [vscode-luacheck](https://marketplace.visualstudio.com/items?itemName=dwenegar.vscode-luacheck) extension. [vscode-lua](https://marketplace.visualstudio.com/items?itemName=trixnz.vscode-lua) extension also includes Luacheck support.
+* For Brackets, [linter.luacheck](https://github.com/Malcolm3141/brackets-luacheck) extension;
+* For Visual Studio code, [vscode-luacheck](https://marketplace.visualstudio.com/items?itemName=dwenegar.vscode-luacheck) extension and [vscode-lua](https://marketplace.visualstudio.com/items?itemName=trixnz.vscode-lua) extension.
 
-If you are a plugin developer, see [recommended way of using Luacheck in a plugin](http://luacheck.readthedocs.org/en/stable/cli.html#stable-interface-for-editor-plugins-and-tools).
+See [recommended way of using Luacheck in a plugin](http://luacheck.readthedocs.org/en/stable/cli.html#stable-interface-for-editor-plugins-and-tools) to develop a new plugin.
 
 ### Other projects
 
@@ -113,7 +113,7 @@ Use the Luacheck issue tracker on GitHub to submit bugs, suggestions and questio
 
 ## Building and testing
 
-After the Luacheck repo is cloned and changes are made, run `luarocks make` (using `sudo` if necessary) from its root directory to install dev version of Luacheck. To run Luacheck using sources in current directory without installing it, run `lua -e 'package.path="./src/?.lua;./src/?/init.lua;"..package.path' bin/luacheck.lua ...`. To test Luacheck, ensure that you have [busted](http://olivinelabs.com/busted/) and [luautf8](https://github.com/starwing/luautf8) installed and run `busted`.
+After the Luacheck repo is cloned and changes are made, run `luarocks make` (using `sudo` if necessary) from its root directory to install dev version of Luacheck. To run Luacheck using sources in current directory without installing it, run `lua -e 'package.path="./src/?.lua;./src/?/init.lua;"..package.path' bin/luacheck.lua ...`. To test Luacheck, install [busted](http://olivinelabs.com/busted/) and [luautf8](https://github.com/starwing/luautf8) and run `busted`.
 
 ## License
 
